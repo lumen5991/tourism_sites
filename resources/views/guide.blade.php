@@ -6,7 +6,7 @@
 
     <div>
         <!-- Header Start -->
-        <div class="container-fluid page-header">
+        <div class="container-fluid page-header-guides">
             <div class="container">
                 <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 500px">
                     <h3 class="display-4 text-white text-uppercase">Guides</h3>
@@ -85,10 +85,11 @@
                             <div class="text-center py-4">
                                 <h5 class="text-truncate">AHLE Rolande</h5>
                                 <p class="m-0">Guide</p>
+                                <a href="{{ route('infosGuide') }}"
+                                    class="font-weight-bold text-uppercase text-decoration-none" style="color: #F18829">Voir
+                                    le profil du guide</a>
                             </div>
-                            <div class="text-center mx-2">
-                                <a href="{{route('infosGuide')}}">Voir le profil du guide</a>
-                            </div>
+
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-6 pb-2">
@@ -101,6 +102,9 @@
                             <div class="text-center py-4">
                                 <h5 class="text-truncate">AHLE Lumen</h5>
                                 <p class="m-0">Guide</p>
+                                <a href="{{ route('infosGuide') }}"
+                                    class="font-weight-bold text-uppercase text-decoration-none" style="color: #F18829">Voir
+                                    le profil du guide</a>
                             </div>
                         </div>
                     </div>
@@ -109,11 +113,13 @@
                             <div class="team-img position-relative overflow-hidden" style="height:250px; ">
                                 <img class="img-fluid w-100" src="{{ asset('TEAM/20240304_222825_0000.png') }}"
                                     alt="">
-
                             </div>
                             <div class="text-center py-4">
                                 <h5 class="text-truncate">AHLE Rolande Lumen</h5>
                                 <p class="m-0">Guide</p>
+                                <a href="{{ route('infosGuide') }}"
+                                    class="font-weight-bold text-uppercase text-decoration-none" style="color: #F18829">Voir
+                                    le profil du guide</a>
                             </div>
                         </div>
                     </div>
@@ -127,6 +133,9 @@
                             <div class="text-center py-4">
                                 <h5 class="text-truncate">AHLE R.Lumen</h5>
                                 <p class="m-0">Guide</p>
+                                <a href="{{ route('infosGuide') }}"
+                                    class="font-weight-bold text-uppercase text-decoration-none" style="color: #F18829">Voir
+                                    le profil du guide</a>
                             </div>
                         </div>
                     </div>
@@ -175,7 +184,8 @@
                                     <h1 class="text-white m-0">Inscrivez-vous</h1>
                                 </div>
                                 <div class="card-body rounded-bottom p-5" style="background-color: #F3F3F3">
-                                    <form>
+                                    <form action="#" method="post" enctype="multipart/form-data"
+                                        novalidate="novalidate">
                                         <div class="form-group">
                                             <input type="text" class="form-control p-4" placeholder="Nom"
                                                 required="required" />

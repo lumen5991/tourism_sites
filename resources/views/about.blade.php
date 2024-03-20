@@ -255,7 +255,8 @@
                                     <h1 class="text-white m-0">Inscrivez-vous</h1>
                                 </div>
                                 <div class="card-body rounded-bottom p-5" style="background-color: #F3F3F3">
-                                    <form>
+                                    <form action="#" method="post" enctype="multipart/form-data"
+                                        novalidate="novalidate">
                                         <div class="form-group">
                                             <input type="text" class="form-control p-4" placeholder="Nom"
                                                 required="required" />

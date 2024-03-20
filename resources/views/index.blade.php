@@ -9,7 +9,7 @@
             <div id="header-carousel" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img class="w-100" style="max-height: 500px; object-fit: cover;"
+                        <img class="w-100" style="max-height: 80vh; object-fit: cover;"
                             src="{{ asset('IMAGES_BENIN/Photo_chute_kota_route_des_tata_1-scaled.jpg') }}" alt="Image">
                         <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                             <div class="p-3" style="max-width: 900px;">
@@ -22,7 +22,7 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img class="w-100" style="max-height: 500px; object-fit: cover;"
+                        <img class="w-100" style="max-height: 80vh; object-fit: cover;"
                             src="{{ asset('IMAGES_BENIN/porte du non retour.jpg') }}" alt="Image">
                         <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                             <div class="p-3" style="max-width: 900px;">
@@ -223,7 +223,8 @@
                                     <h1 class="text-white m-0">Inscrivez-vous</h1>
                                 </div>
                                 <div class="card-body rounded-bottom p-5" style="background-color: #F3F3F3">
-                                    <form>
+                                    <form action="#" method="post" enctype="multipart/form-data"
+                                        novalidate="novalidate">
                                         <div class="form-group">
                                             <input type="text" class="form-control p-4" placeholder="Nom"
                                                 required="required" />

@@ -12,11 +12,11 @@
                 </div>
                 <div class="col-lg-6 text-center text-lg-right">
                     <div class="d-inline-flex align-items-center" style="">
-                        <a class="px-3" href="https://www.facebook.com/profile.php?id=100013386458340"
+                        <a href="{{route('register')}}" class=" px-3 font-weight-bold text-uppercase text-decoration-none px-3" 
                             style="color: #089938; font-weight: bold; ">
-                            {{--  <i class="fab fa-facebook-f"></i> --}} S'INSCRIRE
+                             S'INSCRIRE
                         </a>
-                        <a class="px-3 font-weight-bold" href="https://x.com/RolandeLumen?t=1tKjbmtQp7x8yjjzFq5BfQ&s=08"
+                        <a href="{{route('login')}}" class=" px-3 font-weight-bold text-uppercase text-decoration-none px-3"
                             style="color: #F18829;">
                            SE CONNECTER
                         </a>

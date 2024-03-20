@@ -9540,6 +9540,9 @@ h6,
   .page-header-sites {
     margin-top: -42px;
   }
+  .page-header-guides{
+    margin-top: -42px;
+  }
 }
 
 .carousel-caption {
@@ -9589,6 +9592,12 @@ h6,
 /* sites */
 .page-header-sites {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../IMAGES_BENIN/tata_somb.png), no-repeat center center;
+  background-size: cover;
+}
+
+/* Guide */
+.page-header-guides {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../IMAGES_BENIN/guide_page.jpg), no-repeat center center;
   background-size: cover;
 }
 

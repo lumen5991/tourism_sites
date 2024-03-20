@@ -82,13 +82,13 @@
                                 <!-- Vos éléments de sites touristiques vont ici -->
                                 <div class="col-md-6 mb-4">
                                     <div class="package-item bg-white mb-2">
-                                        <a href="{{route('detailsSites')}}">
-                                            <img class="img-fluid w-100"
-                                                src="{{ asset('IMAGES_BENIN/3.amazone.jpg') }}" alt=""
-                                                style="height: 200px; object-fit: cover;">
+                                        <a href="{{ route('detailsSites') }}">
+                                            <img class="img-fluid w-100" src="{{ asset('IMAGES_BENIN/3.amazone.jpg') }}"
+                                                alt="" style="height: 200px; object-fit: cover;">
                                         </a>
                                         <div class="p-4">
-                                            <a class="h5 text-decoration-none text-primary" href="{{route('detailsSites')}}">Place de
+                                            <a class="h5 text-decoration-none text-primary"
+                                                href="{{ route('detailsSites') }}">Place de
                                                 l'amozone</a>
                                             <p class="text-justify mb-3">Lorem ipsum dolor sit amet consectetur adipisicing
                                                 elit.</p>
@@ -100,13 +100,14 @@
                                             <div class="border-top mt-4 pt-4">
                                                 <div class="d-flex justify-content-between">
                                                     <h6 class="">
-                                                        <button type="submit" class="" style="cursor:pointer; background:transparent; outline:none; border:none">
+                                                        <button type="submit" class=""
+                                                            style="cursor:pointer; background:transparent; outline:none; border:none">
                                                             <i class="fa fa-heart" style="color: #F18829;"></i>
                                                         </button>
                                                         <small>(250)</small>
                                                     </h6>
-                                                    
-                                                    
+
+
                                                 </div>
                                             </div>
                                         </div>
@@ -114,13 +115,14 @@
                                 </div>
                                 <div class="col-md-6 mb-4">
                                     <div class="package-item bg-white mb-2">
-                                        <a href="{{route('detailsSites')}}">
+                                        <a href="{{ route('detailsSites') }}">
                                             <img class="img-fluid w-100"
                                                 src="{{ asset('IMAGES_BENIN/Beach_of_Ouidah_Benin.jpg') }}" alt=""
                                                 style="height: 200px; object-fit: cover;">
                                         </a>
                                         <div class="p-4">
-                                            <a class="h5 text-decoration-none text-primary" href="{{route('detailsSites')}}">Place de
+                                            <a class="h5 text-decoration-none text-primary"
+                                                href="{{ route('detailsSites') }}">Place de
                                                 l'amozone</a>
                                             <p class="text-justify mb-3">Lorem ipsum dolor sit amet consectetur adipisicing
                                                 elit.</p>
@@ -167,35 +169,51 @@
                         </div>
                         <!-- Colonne pour le bouton "Ajouter un site" -->
                         <div class="col-lg-4 mt-5 mt-lg-0">
-                             <!-- Category List -->
+                            <!-- Category List -->
+                            <div class="mb-5">
+                                <h4 class="text-uppercase mb-4" style="letter-spacing: 5px; color:#F18829">Categories</h4>
+                                <div class="bg-white" style="padding: 30px;">
+                                    <ul class="list-inline m-0">
+                                        <li class="mb-3 d-flex justify-content-between align-items-center">
+                                            <a class="text-dark" href="#"><i
+                                                    class="fa fa-angle-right text-primary mr-2"></i>Restauration</a>
+                                            <span class="badge badge-primary badge-pill">150</span>
+                                        </li>
+                                        <li class="mb-3 d-flex justify-content-between align-items-center">
+                                            <a class="text-dark" href="#"><i
+                                                    class="fa fa-angle-right text-primary mr-2"></i>Hébergement</a>
+                                            <span class="badge badge-primary badge-pill">131</span>
+                                        </li>
+                                        <li class="mb-3 d-flex justify-content-between align-items-center">
+                                            <a class="text-dark" href="#"><i
+                                                    class="fa fa-angle-right text-primary mr-2"></i>Cultures</a>
+                                            <span class="badge badge-primary badge-pill">78</span>
+                                        </li>
+                                        <li class="mb-3 d-flex justify-content-between align-items-center">
+                                            <a class="text-dark" href="#"><i
+                                                    class="fa fa-angle-right text-primary mr-2"></i>Monuments</a>
+                                            <span class="badge badge-primary badge-pill">56</span>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center">
+                                            <a class="text-dark" href="#"><i
+                                                    class="fa fa-angle-right text-primary mr-2"></i>Natures</a>
+                                            <span class="badge badge-primary badge-pill">98</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            
+                    <!-- Search Form -->
                     <div class="mb-5">
-                        <h4 class="text-uppercase mb-4" style="letter-spacing: 5px; color:#F18829">Categories</h4>
                         <div class="bg-white" style="padding: 30px;">
-                            <ul class="list-inline m-0">
-                                <li class="mb-3 d-flex justify-content-between align-items-center">
-                                    <a class="text-dark" href="#"><i class="fa fa-angle-right text-primary mr-2"></i>Restauration</a>
-                                    <span class="badge badge-primary badge-pill">150</span>
-                                </li>
-                                <li class="mb-3 d-flex justify-content-between align-items-center">
-                                    <a class="text-dark" href="#"><i class="fa fa-angle-right text-primary mr-2"></i>Hébergement</a>
-                                    <span class="badge badge-primary badge-pill">131</span>
-                                </li>
-                                <li class="mb-3 d-flex justify-content-between align-items-center">
-                                    <a class="text-dark" href="#"><i
-                                            class="fa fa-angle-right text-primary mr-2"></i>Cultures</a>
-                                    <span class="badge badge-primary badge-pill">78</span>
-                                </li>
-                                <li class="mb-3 d-flex justify-content-between align-items-center">
-                                    <a class="text-dark" href="#"><i
-                                            class="fa fa-angle-right text-primary mr-2"></i>Monuments</a>
-                                    <span class="badge badge-primary badge-pill">56</span>
-                                </li>
-                                <li class="d-flex justify-content-between align-items-center">
-                                    <a class="text-dark" href="#"><i
-                                            class="fa fa-angle-right text-primary mr-2"></i>Natures</a>
-                                    <span class="badge badge-primary badge-pill">98</span>
-                                </li>
-                            </ul>
+                            <div class="input-group">
+                                <input type="text" class="form-control p-4" placeholder="voir les sites proches">
+                                <div class="input-group-append">
+                                    <span class="input-group-text bg-primary border-primary text-white"><i
+                                            class="fa fa-search"></i></span>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -216,73 +234,7 @@
         </div>
         <!-- Sites End -->
 
-        {{-- 
-        <!-- Destination Start -->
-        <div class="container-fluid py-5">
-            <div class="container pt-5 pb-3">
-                <div class="text-center mb-3 pb-3">
-                    <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Destination</h6>
-                    <h1>Explore Top Destination</h1>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="destination-item position-relative overflow-hidden mb-2">
-                            <img class="img-fluid" src="img/destination-1.jpg" alt="">
-                            <a class="destination-overlay text-white text-decoration-none" href="">
-                                <h5 class="text-white">United States</h5>
-                                <span>100 Cities</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="destination-item position-relative overflow-hidden mb-2">
-                            <img class="img-fluid" src="img/destination-2.jpg" alt="">
-                            <a class="destination-overlay text-white text-decoration-none" href="">
-                                <h5 class="text-white">United Kingdom</h5>
-                                <span>100 Cities</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="destination-item position-relative overflow-hidden mb-2">
-                            <img class="img-fluid" src="img/destination-3.jpg" alt="">
-                            <a class="destination-overlay text-white text-decoration-none" href="">
-                                <h5 class="text-white">Australia</h5>
-                                <span>100 Cities</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="destination-item position-relative overflow-hidden mb-2">
-                            <img class="img-fluid" src="img/destination-4.jpg" alt="">
-                            <a class="destination-overlay text-white text-decoration-none" href="">
-                                <h5 class="text-white">India</h5>
-                                <span>100 Cities</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="destination-item position-relative overflow-hidden mb-2">
-                            <img class="img-fluid" src="img/destination-5.jpg" alt="">
-                            <a class="destination-overlay text-white text-decoration-none" href="">
-                                <h5 class="text-white">South Africa</h5>
-                                <span>100 Cities</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="destination-item position-relative overflow-hidden mb-2">
-                            <img class="img-fluid" src="img/destination-6.jpg" alt="">
-                            <a class="destination-overlay text-white text-decoration-none" href="">
-                                <h5 class="text-white">Indonesia</h5>
-                                <span>100 Cities</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Destination Start --> --}}
+       
 
     </div>
 @endsection

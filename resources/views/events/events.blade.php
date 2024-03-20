@@ -159,7 +159,8 @@
 
                                             <div>
                                                 <a class="font-weight-bold text-uppercase text-decoration-none"
-                                                    style="color:#F18829; " href="{{ route('detailsEvents') }}">Palais des
+                                                    style="color:#F18829; " href="{{ route('detailsEvents') }}">Palais
+                                                    des
                                                     congrès</a>
                                             </div>
 
@@ -190,7 +191,8 @@
 
                                             <div>
                                                 <a class="font-weight-bold text-uppercase text-decoration-none"
-                                                    style="color:#F18829; " href="{{ route('detailsEvents') }}">Palais des
+                                                    style="color:#F18829; " href="{{ route('detailsEvents') }}">Palais
+                                                    des
                                                     congrès</a>
                                             </div>
 
@@ -230,7 +232,8 @@
                         <!-- Recent Event -->
                         <div class="mb-5">
                             <h4 class="text-uppercase mb-4" style="letter-spacing: 5px;">Evènements passés</h4>
-                            <a class="d-flex align-items-center text-decoration-none bg-white mb-3" href="{{route('detailsEvents')}}">
+                            <a class="d-flex align-items-center text-decoration-none bg-white mb-3"
+                                href="{{ route('detailsEvents') }}">
                                 <div style="height: 100px; width:100px">
                                     <img class="img-fluid" src="{{ asset('IMAGES_BENIN/eat_and_drink.png') }}"
                                         alt="" style="object-fit: cover">
@@ -241,7 +244,8 @@
                                     <small style="color: #F18829" class="font-weight-bold">10 Jan 2024</small>
                                 </div>
                             </a>
-                            <a class="d-flex align-items-center text-decoration-none bg-white mb-3" href="{{route('detailsEvents')}}">
+                            <a class="d-flex align-items-center text-decoration-none bg-white mb-3"
+                                href="{{ route('detailsEvents') }}">
                                 <div style="height: 100px; width:100px">
                                     <img class="img-fluid" src="{{ asset('IMAGES_BENIN/eat_and_drink.png') }}"
                                         alt="" style="object-fit: cover">
@@ -257,7 +261,8 @@
                         <!-- Add event -->
                         <div class="mb-5">
                             <div class="bg-white" style="padding: 30px;">
-                                <a href="{{route('addEvent')}}" class="btn btn-primary btn-block py-3 font-weight-bold" >Ajouter un événement</a>
+                                <a href="{{ route('addEvent') }}"
+                                    class="btn btn-primary btn-block py-3 font-weight-bold">Ajouter un événement</a>
                             </div>
                         </div>
                     </div>

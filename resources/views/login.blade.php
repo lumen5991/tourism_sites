@@ -5,14 +5,14 @@
 @section('content')
     <div>
         <!-- Header Start -->
-        <div class="container-fluid page-header-guides">
+        <div class="container-fluid page-header-event">
             <div class="container">
                 <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 500px">
-                    <h3 class="display-4 text-white text-uppercase">Profil Guide</h3>
+                    <h3 class="display-4 text-white text-uppercase">Connexion</h3>
                     <div class="d-inline-flex text-white">
-                        <p class="m-0 text-uppercase"><a class="text-white" href="">Acceuil</a></p>
+                        <p class="m-0 text-uppercase"><a class="text-white" href="">Histoire</a></p>
                         <i class="fa fa-angle-double-right pt-1 px-3"></i>
-                        <p class="m-0 text-uppercase">Profil Guide</p>
+                        <p class="m-0 text-uppercase">Connectez-vous</p>
                     </div>
                 </div>
             </div>
@@ -65,33 +65,45 @@
             </div>
         </div>
         <!-- Categories Tourism End -->
-
-    <!-- Profile Guide Start -->
-<div class="container py-5">
-    <div class="row">
-        <div class="col-lg-4">
-            <div class="text-center">
-                <img class="rounded-circle mb-4" src="{{ asset('TEAM/20240304_220332_0000.png') }}" alt="Profile Image" style="width: 200px; height: 200px; object-fit: cover;" >
-                <h5 class="mb-2 text-primary">AHLE Rolande</h5>
-                <p class="text-muted mb-2">Guide Touristique</p>
-                <p class="text-muted">Langues Parlées: Français, Anglais</p>
+        <!-- Login Form Start -->
+        <div class="container-fluid py-5">
+            <div class="container-lg py-5">
+                <div class="text-center mb-4 pb-4">
+                    <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Connexion</h6>
+                    <h1>Connectez-vous à votre compte</h1>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="contact-form bg-white p-5">
+                            <div id="success"></div>
+                            <form action="#" method="post" novalidate="novalidate">
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="Email"
+                                        required="required" data-validation-required-message="Veuillez entrer votre adresse email" />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password">Mot de passe</label>
+                                    <input type="password" class="form-control" id="password" name="password" placeholder="Mot de passe"
+                                        required="required" data-validation-required-message="Veuillez entrer votre mot de passe" />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="text-center mb-3 bg-primary">
+                                    <button class="btn btn-primary font-weight-bold" type="submit">Se connecter</button>
+                                </div>
+                            </form>
+                            <div class="text-justify">
+                                <p>Mot de passe oublié ? <a href="" style="color:#F18829">Modifier mot de passe</a></p>
+                                <p>Pas de compte ? <a href="" style="color:#F18829">Inscrivez-vous ici</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="col-lg-8">
-            <h2 class="mb-4">À propos de moi</h2>
-            <p class="text-muted text-justify">Je suis passionné par la découverte et la mise en valeur des trésors du Bénin. Avec plusieurs années d'expérience dans le domaine du guidage touristique, je m'engage à offrir des expériences authentiques et enrichissantes à mes clients.</p>
-          
-            <h2 class="mb-4">Me contacter</h2>
-            <ul class="list-unstyled">
-                <li><a href="mailto:rolande.ahle@yahoo.ca"><i class="fas fa-envelope text-primary mr-2"></i>rolande.ahle@yahoo.ca</a></li>
-                <li><a href="https://wa.me/+22996787423"><i class="fab fa-whatsapp text-primary mr-2"></i>+22996787423</a></li>
-            </ul>
-        </div>
-    </div>
-</div>
-<!-- Profile Guide End -->
-
-
+        
+        <!-- Login Form End -->
 
     </div>
 @endsection
