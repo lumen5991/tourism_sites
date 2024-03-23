@@ -34,3 +34,4 @@ Route::view('/contact', 'contact')->name('contact');
 Route::view('/destination', 'destination')->name('destination');
 Route::view('/testimonial', 'testimonial')->name('testimonial');
 
+Route::view('/admin/listuser', 'admin.listUser')->name('listUser');

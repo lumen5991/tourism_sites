@@ -73,7 +73,7 @@
                 <div class="row">
                     <div class="col-lg-6" style="min-height: 500px;">
                         <div class="position-relative h-100">
-                            <img class="position-absolute w-100 h-100" src="{{ asset('IMAGES_BENIN/bio-guera-1.jpg') }}"
+                            <img class="position-absolute w-100 h-100" src="{{ asset('assets/IMAGES_BENIN/bio-guera-1.jpg') }}"
                                 style="object-fit: cover;">
                         </div>
                     </div>
@@ -90,12 +90,12 @@
                                 extraordinaire tout en contribuant à la richesse et au développement du Bénin.</p>
                             <div class="row mb-4">
                                 <div class="col-6">
-                                    <img class="img-fluid h-100" src="{{ asset('IMAGES_BENIN/benin-ganvie.bb32d59.png') }}"
+                                    <img class="img-fluid h-100" src="{{ asset('assets/IMAGES_BENIN/benin-ganvie.bb32d59.png') }}"
                                         alt="">
                                     <h6 style="color: #FFC65A">ganvié</h6>
                                 </div>
                                 <div class="col-6">
-                                    <img class="img-fluid h-100" src="{{ asset('IMAGES_BENIN/benin-ouidah.jpg') }}"
+                                    <img class="img-fluid h-100" src="{{ asset('assets/IMAGES_BENIN/benin-ouidah.jpg') }}"
                                         alt="">
                                     <h6 style="color: #FFC65A">ouidah</h6>
                                 </div>
@@ -160,7 +160,7 @@
                     <div class="col-lg-6 pb-1">
                         <div class="team-item bg-white mb-4 h-100">
                             <div class="team-img position-relative overflow-hidden">
-                                <img class="img-fluid w-100 h-100" src="{{ asset('TEAM/20240304_222755_0000.png') }}"
+                                <img class="img-fluid w-100 h-100" src="{{ asset('assets/TEAM/20240304_222755_0000.png') }}"
                                     alt="Membre de l'équipe 1">
                                 <div class="team-social">
                                     <a class="btn btn-outline-primary btn-square"

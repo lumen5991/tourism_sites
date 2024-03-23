@@ -81,7 +81,7 @@
                                     <div class="blog-item">
                                         <div class="position-relative">
                                             <div>
-                                                <img class="img-fluid w-100" src="{{ asset('IMAGES_BENIN/3.amazone.jpg') }}"
+                                                <img class="img-fluid w-100" src="{{ asset('assets/IMAGES_BENIN/3.amazone.jpg') }}"
                                                     alt="">
                                             </div>
                                           
@@ -124,13 +124,13 @@
                                             <div class="carousel-inner">
                                                 <div class="carousel-item active" style="height: 400px">
                                                     <img class="d-block w-100"
-                                                        src="{{ asset('IMAGES_BENIN/Beach_of_Ouidah_Benin.jpg') }}"
+                                                        src="{{ asset('assets/IMAGES_BENIN/Beach_of_Ouidah_Benin.jpg') }}"
                                                         alt="First slide" style="object-fit: cover; height:100%">
                                                 </div>
 
                                                 <div class="carousel-item" style="height: 400px">
                                                     <img class="d-block w-100"
-                                                        src="{{ asset('IMAGES_BENIN/Beach_of_Ouidah_Benin.jpg') }}"
+                                                        src="{{ asset('assets/IMAGES_BENIN/Beach_of_Ouidah_Benin.jpg') }}"
                                                         alt="First slide" style="object-fit: cover; height:100%">
                                                 </div>
 
@@ -164,7 +164,7 @@
                                 <div style="height: 100px; width:100px; margin: 0 auto;">
                                     <!-- Guide Image -->
                                     <a href="#">
-                                        <img src="{{ asset('TEAM/IMG-20230414-WA0036.jpg') }}"
+                                        <img src="{{ asset('assets/TEAM/IMG-20230414-WA0036.jpg') }}"
                                             class="img-fluid mx-auto mb-3"
                                             style="object-fit:cover; width:100%; height:100%">
                                     </a>

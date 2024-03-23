@@ -71,7 +71,7 @@
     <div class="row">
         <div class="col-lg-4">
             <div class="text-center">
-                <img class="rounded-circle mb-4" src="{{ asset('TEAM/20240304_220332_0000.png') }}" alt="Profile Image" style="width: 200px; height: 200px; object-fit: cover;" >
+                <img class="rounded-circle mb-4" src="{{ asset('assets/TEAM/20240304_220332_0000.png') }}" alt="Profile Image" style="width: 200px; height: 200px; object-fit: cover;" >
                 <h5 class="mb-2 text-primary">AHLE Rolande</h5>
                 <p class="text-muted mb-2">Guide Touristique</p>
                 <p class="text-muted">Langues Parlées: Français, Anglais</p>

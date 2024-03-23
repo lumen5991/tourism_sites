@@ -79,7 +79,7 @@
                     <div class="col-lg-3 col-md-4 col-sm-6 pb-2">
                         <div class="team-item bg-white mb-4">
                             <div class="team-img position-relative overflow-hidden" style="height:250px; ">
-                                <img class="img-fluid w-100" src="{{ asset('TEAM/20240304_220332_0000.png') }}"
+                                <img class="img-fluid w-100" src="{{ asset('assets/TEAM/20240304_220332_0000.png') }}"
                                     alt="">
                             </div>
                             <div class="text-center py-4">
@@ -95,7 +95,7 @@
                     <div class="col-lg-3 col-md-4 col-sm-6 pb-2">
                         <div class="team-item bg-white mb-4">
                             <div class="team-img position-relative overflow-hidden" style="height:250px; ">
-                                <img class="img-fluid w-100" src="{{ asset('TEAM/20240304_222755_0000.png') }}"
+                                <img class="img-fluid w-100" src="{{ asset('assets/TEAM/20240304_222755_0000.png') }}"
                                     alt="">
 
                             </div>
@@ -111,7 +111,7 @@
                     <div class="col-lg-3 col-md-4 col-sm-6 pb-2">
                         <div class="team-item bg-white mb-4">
                             <div class="team-img position-relative overflow-hidden" style="height:250px; ">
-                                <img class="img-fluid w-100" src="{{ asset('TEAM/20240304_222825_0000.png') }}"
+                                <img class="img-fluid w-100" src="{{ asset('assets/TEAM/20240304_222825_0000.png') }}"
                                     alt="">
                             </div>
                             <div class="text-center py-4">
@@ -126,7 +126,7 @@
                     <div class="col-lg-3 col-md-4 col-sm-6 pb-2">
                         <div class="team-item bg-white mb-4">
                             <div class="team-img position-relative overflow-hidden" style="height:250px; ">
-                                <img class="img-fluid w-100" src="{{ asset('TEAM/IMG-20230414-WA0036.jpg') }}"
+                                <img class="img-fluid w-100" src="{{ asset('assets/TEAM/IMG-20230414-WA0036.jpg') }}"
                                     alt="">
 
                             </div>

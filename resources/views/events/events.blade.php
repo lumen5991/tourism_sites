@@ -79,7 +79,7 @@
                                     <div class="position-relative">
                                         <a href="{{ route('detailsEvents') }}">
                                             <img class="img-fluid w-100"
-                                                src="{{ asset('IMAGES_BENIN/events/eat and drink.jpg') }}" alt=""
+                                                src="{{ asset('assets/IMAGES_BENIN/events/eat and drink.jpg') }}" alt=""
                                                 style="height: 200px; object-fit: cover;">
                                         </a>
                                         <div class="blog-date">
@@ -110,7 +110,7 @@
                                     <div class="position-relative">
                                         <a href="{{ route('detailsEvents') }}">
                                             <img class="img-fluid w-100"
-                                                src="{{ asset('IMAGES_BENIN/events/vague blanche.jpg') }}"
+                                                src="{{ asset('assets/IMAGES_BENIN/events/vague blanche.jpg') }}"
                                                 alt="" style="height: 200px; object-fit: cover;">
                                         </a>
                                         <div class="blog-date">
@@ -140,7 +140,7 @@
                                     <div class="position-relative">
                                         <a href="{{ route('detailsEvents') }}">
                                             <img class="img-fluid w-100"
-                                                src="{{ asset('IMAGES_BENIN/events/récré.jpg') }}" alt=""
+                                                src="{{ asset('assets/IMAGES_BENIN/events/récré.jpg') }}" alt=""
                                                 style="height: 200px; object-fit: cover;">
                                         </a>
                                         <div class="blog-date">
@@ -170,7 +170,7 @@
                                     <div class="position-relative">
                                         <a href="{{ route('detailsEvents') }}">
                                             <img class="img-fluid w-100"
-                                                src="{{ asset('IMAGES_BENIN/events/cotonou barbecue.jpg') }}"
+                                                src="{{ asset('assets/IMAGES_BENIN/events/cotonou barbecue.jpg') }}"
                                                 alt="" style="height: 200px; object-fit: cover;">
                                         </a>
                                         <div class="blog-date">
@@ -230,7 +230,7 @@
                             <a class="d-flex align-items-center text-decoration-none bg-white mb-3"
                                 href="{{ route('detailsEvents') }}">
                                 <div style="height: 100px; width:100px">
-                                    <img class="img-fluid" src="{{ asset('IMAGES_BENIN/eat_and_drink.png') }}"
+                                    <img class="img-fluid" src="{{ asset('assets/IMAGES_BENIN/eat_and_drink.png') }}"
                                         alt="" style="object-fit: cover">
                                 </div>
 
@@ -242,7 +242,7 @@
                             <a class="d-flex align-items-center text-decoration-none bg-white mb-3"
                                 href="{{ route('detailsEvents') }}">
                                 <div style="height: 100px; width:100px">
-                                    <img class="img-fluid" src="{{ asset('IMAGES_BENIN/events/vodunsday.jpg') }}"
+                                    <img class="img-fluid" src="{{ asset('assets/IMAGES_BENIN/events/vodunsday.jpg') }}"
                                         alt="" style="object-fit: cover">
                                 </div>
 

@@ -83,7 +83,7 @@
                                 <div class="col-md-6 mb-4">
                                     <div class="package-item bg-white mb-2">
                                         <a href="{{ route('detailsSites') }}">
-                                            <img class="img-fluid w-100" src="{{ asset('IMAGES_BENIN/3.amazone.jpg') }}"
+                                            <img class="img-fluid w-100" src="{{ asset('assets/IMAGES_BENIN/3.amazone.jpg') }}"
                                                 alt="" style="height: 200px; object-fit: cover;">
                                         </a>
                                         <div class="p-4">
@@ -116,7 +116,7 @@
                                     <div class="package-item bg-white mb-2">
                                         <a href="{{ route('detailsSites') }}">
                                             <img class="img-fluid w-100"
-                                                src="{{ asset('IMAGES_BENIN/Beach_of_Ouidah_Benin.jpg') }}" alt=""
+                                                src="{{ asset('assets/IMAGES_BENIN/Beach_of_Ouidah_Benin.jpg') }}" alt=""
                                                 style="height: 200px; object-fit: cover;">
                                         </a>
                                         <div class="p-4">

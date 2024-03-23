@@ -10,7 +10,7 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img class="w-100" style="max-height: 80vh; object-fit: cover;"
-                            src="{{ asset('IMAGES_BENIN/Photo_chute_kota_route_des_tata_1-scaled.jpg') }}" alt="Image">
+                            src="{{ asset('assets/IMAGES_BENIN/Photo_chute_kota_route_des_tata_1-scaled.jpg') }}" alt="Image">
                         <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                             <div class="p-3" style="max-width: 900px;">
                                 <h4 class="text-white text-uppercase mb-md-3">Bienvenue sur <span
@@ -23,7 +23,7 @@
                     </div>
                     <div class="carousel-item">
                         <img class="w-100" style="max-height: 80vh; object-fit: cover;"
-                            src="{{ asset('IMAGES_BENIN/porte du non retour.jpg') }}" alt="Image">
+                            src="{{ asset('assets/IMAGES_BENIN/porte du non retour.jpg') }}" alt="Image">
                         <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                             <div class="p-3" style="max-width: 900px;">
                                 <h4 class="text-white text-uppercase mb-md-3">Bienvenue sur <span
@@ -107,7 +107,7 @@
                     <div class="col-lg-6" style="min-height: 500px;">
                         <div class="position-relative h-100">
                             <img class="position-absolute w-100 h-100"
-                                src="{{ asset('IMAGES_BENIN/benin-carte--sur-fond-noir-gratuit-vectoriel.jpg') }}"
+                                src="{{ asset('assets/IMAGES_BENIN/benin-carte--sur-fond-noir-gratuit-vectoriel.jpg') }}"
                                 style="object-fit: cover;">
                         </div>
                     </div>
