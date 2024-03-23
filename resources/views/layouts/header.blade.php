@@ -49,9 +49,9 @@
                        <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Mon compte</a>
                         <div class="dropdown-menu border-0 rounded-0 m-0">
-                            <a href="{{ route('blog') }}" class="dropdown-item">Mon profil</a>
+                            <a href="{{ route('testimonial') }}" class="dropdown-item">Mon profil</a>
                             <a href="{{ route('detailsEvents') }}" class="dropdown-item">Mes activités</a>
-                            <a href="{{ route('destination') }}" class="dropdown-item">Me déconnecter</a>
+                            <a href="{{ route('contact') }}" class="dropdown-item">Me déconnecter</a>
                         </div>
                     </div>
                     </div>

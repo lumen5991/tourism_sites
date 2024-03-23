@@ -90,8 +90,7 @@
                                             <a class="h5 text-decoration-none text-primary"
                                                 href="{{ route('detailsSites') }}">Place de
                                                 l'amozone</a>
-                                            <p class="text-justify mb-3">Lorem ipsum dolor sit amet consectetur adipisicing
-                                                elit.</p>
+                                            <p class="text-justify mb-3">L’esplanade de l'Amazone sera un point d’attraction et de rencontre ...</p>
                                             <div class="d-flex justify-content-between mb-3 ">
                                                 <small class="m-0"><i class="fa fa-map-marker-alt mr-2"
                                                         style="color: #F18829"></i>Cotonou</small>
@@ -104,7 +103,7 @@
                                                             style="cursor:pointer; background:transparent; outline:none; border:none">
                                                             <i class="fa fa-heart" style="color: #F18829;"></i>
                                                         </button>
-                                                        <small>(250)</small>
+                                                        <small>(5)</small>
                                                     </h6>
 
 
@@ -122,20 +121,18 @@
                                         </a>
                                         <div class="p-4">
                                             <a class="h5 text-decoration-none text-primary"
-                                                href="{{ route('detailsSites') }}">Place de
-                                                l'amozone</a>
-                                            <p class="text-justify mb-3">Lorem ipsum dolor sit amet consectetur adipisicing
-                                                elit.</p>
+                                                href="{{ route('detailsSites') }}">Plage de Ouidah</a>
+                                            <p class="text-justify mb-3">Près de la porte du non-retour, se trouvent des petites échoppes à ...</p>
                                             <div class="d-flex justify-content-between mb-3 ">
                                                 <small class="m-0"><i class="fa fa-map-marker-alt mr-2"
-                                                        style="color: #F18829"></i>Cotonou</small>
+                                                        style="color: #F18829"></i>Ouidah</small>
                                             </div>
 
                                             <div class="border-top mt-4 pt-4">
                                                 <div class="d-flex justify-content-between">
                                                     <h6 class="m-0"><i class="fa fa-heart mr-2 "
                                                             style="color: #F18829; cursor:pointer"></i>
-                                                        <small>(250)</small>
+                                                        <small>(2)</small>
                                                     </h6>
                                                 </div>
                                             </div>
@@ -217,7 +214,7 @@
                         </div>
                     </div>
 
-                            <!-- Add event -->
+                            <!-- Add sites -->
                             <div class="mb-5">
                                 <div class="bg-white" style="padding: 30px;">
                                     <a href="{{ route('addEvent') }}"

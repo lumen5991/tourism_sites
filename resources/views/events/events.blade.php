@@ -79,12 +79,12 @@
                                     <div class="position-relative">
                                         <a href="{{ route('detailsEvents') }}">
                                             <img class="img-fluid w-100"
-                                                src="{{ asset('IMAGES_BENIN/Beach_of_Ouidah_Benin.jpg') }}" alt=""
+                                                src="{{ asset('IMAGES_BENIN/events/eat and drink.jpg') }}" alt=""
                                                 style="height: 200px; object-fit: cover;">
                                         </a>
                                         <div class="blog-date">
-                                            <h6 class="font-weight-bold mb-n1">01</h6>
-                                            <small class="text-white text-uppercase">Jan</small>
+                                            <h6 class="font-weight-bold mb-n1">08</h6>
+                                            <small class="text-white text-uppercase">Août</small>
                                             <h6 class="font-weight-bold mb-n1">2024</h6>
                                         </div>
                                     </div>
@@ -110,12 +110,12 @@
                                     <div class="position-relative">
                                         <a href="{{ route('detailsEvents') }}">
                                             <img class="img-fluid w-100"
-                                                src="{{ asset('IMAGES_BENIN/Destination-Afrique-lieux-tourisme-au-Benin.jpg') }}"
+                                                src="{{ asset('IMAGES_BENIN/events/vague blanche.jpg') }}"
                                                 alt="" style="height: 200px; object-fit: cover;">
                                         </a>
                                         <div class="blog-date">
-                                            <h6 class="font-weight-bold mb-n1">01</h6>
-                                            <small class="text-white text-uppercase">Jan</small>
+                                            <h6 class="font-weight-bold mb-n1">05</h6>
+                                            <small class="text-white text-uppercase">Juin</small>
                                             <h6 class="font-weight-bold mb-n1">2024</h6>
                                         </div>
                                     </div>
@@ -123,13 +123,12 @@
                                         <div class="">
                                             <div>
                                                 <a class="font-weight-bold text-uppercase text-decoration-none text-black"
-                                                    href="{{ route('detailsEvents') }}">Eat and drink</a>
+                                                    href="{{ route('detailsEvents') }}">La vague blanche</a>
                                             </div>
 
                                             <div>
                                                 <a class="font-weight-bold text-uppercase text-decoration-none"
-                                                    style="color:#F18829; " href="{{ route('detailsEvents') }}">Palais des
-                                                    congrès</a>
+                                                    style="color:#F18829; " href="{{ route('detailsEvents') }}">Tori</a>
                                             </div>
 
                                         </div>
@@ -141,12 +140,12 @@
                                     <div class="position-relative">
                                         <a href="{{ route('detailsEvents') }}">
                                             <img class="img-fluid w-100"
-                                                src="{{ asset('IMAGES_BENIN/Beach_of_Ouidah_Benin.jpg') }}" alt=""
+                                                src="{{ asset('IMAGES_BENIN/events/récré.jpg') }}" alt=""
                                                 style="height: 200px; object-fit: cover;">
                                         </a>
                                         <div class="blog-date">
-                                            <h6 class="font-weight-bold mb-n1">01</h6>
-                                            <small class="text-white text-uppercase">Jan</small>
+                                            <h6 class="font-weight-bold mb-n1">05</h6>
+                                            <small class="text-white text-uppercase">Août</small>
                                             <h6 class="font-weight-bold mb-n1">2024</h6>
                                         </div>
                                     </div>
@@ -154,14 +153,12 @@
                                         <div class="">
                                             <div>
                                                 <a class="font-weight-bold text-uppercase text-decoration-none text-black"
-                                                    href="{{ route('detailsEvents') }}">Eat and drink</a>
+                                                    href="{{ route('detailsEvents') }}">La récré</a>
                                             </div>
 
                                             <div>
                                                 <a class="font-weight-bold text-uppercase text-decoration-none"
-                                                    style="color:#F18829; " href="{{ route('detailsEvents') }}">Palais
-                                                    des
-                                                    congrès</a>
+                                                    style="color:#F18829; " href="{{ route('detailsEvents') }}"> We love eya </a>
                                             </div>
 
                                         </div>
@@ -173,12 +170,12 @@
                                     <div class="position-relative">
                                         <a href="{{ route('detailsEvents') }}">
                                             <img class="img-fluid w-100"
-                                                src="{{ asset('IMAGES_BENIN/Destination-Afrique-lieux-tourisme-au-Benin.jpg') }}"
+                                                src="{{ asset('IMAGES_BENIN/events/cotonou barbecue.jpg') }}"
                                                 alt="" style="height: 200px; object-fit: cover;">
                                         </a>
                                         <div class="blog-date">
-                                            <h6 class="font-weight-bold mb-n1">01</h6>
-                                            <small class="text-white text-uppercase">Jan</small>
+                                            <h6 class="font-weight-bold mb-n1">21</h6>
+                                            <small class="text-white text-uppercase">Juil</small>
                                             <h6 class="font-weight-bold mb-n1">2024</h6>
                                         </div>
                                     </div>
@@ -186,14 +183,12 @@
                                         <div class="">
                                             <div>
                                                 <a class="font-weight-bold text-uppercase text-decoration-none text-black"
-                                                    href="{{ route('detailsEvents') }}">Eat and drink</a>
+                                                    href="{{ route('detailsEvents') }}">Cotonou barbecue</a>
                                             </div>
 
                                             <div>
                                                 <a class="font-weight-bold text-uppercase text-decoration-none"
-                                                    style="color:#F18829; " href="{{ route('detailsEvents') }}">Palais
-                                                    des
-                                                    congrès</a>
+                                                    style="color:#F18829; " href="{{ route('detailsEvents') }}"> Canal Olympia </a>
                                             </div>
 
                                         </div>
@@ -241,18 +236,18 @@
 
                                 <div class="pl-3">
                                     <h6 class="m-1">Eat and Drink</h6>
-                                    <small style="color: #F18829" class="font-weight-bold">10 Jan 2024</small>
+                                    <small style="color: #F18829" class="font-weight-bold">15 Mars 2024</small>
                                 </div>
                             </a>
                             <a class="d-flex align-items-center text-decoration-none bg-white mb-3"
                                 href="{{ route('detailsEvents') }}">
                                 <div style="height: 100px; width:100px">
-                                    <img class="img-fluid" src="{{ asset('IMAGES_BENIN/eat_and_drink.png') }}"
+                                    <img class="img-fluid" src="{{ asset('IMAGES_BENIN/events/vodunsday.jpg') }}"
                                         alt="" style="object-fit: cover">
                                 </div>
 
                                 <div class="pl-3">
-                                    <h6 class="m-1">Eat and Drink</h6>
+                                    <h6 class="m-1">Vodun's days</h6>
                                     <small style="color: #F18829" class="font-weight-bold">10 Jan 2024</small>
                                 </div>
                             </a>

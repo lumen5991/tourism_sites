@@ -17,7 +17,7 @@
                                         style="color: #089938;">BENIN</span><span style="color: #F18829">DO</span><span
                                         style="color: brown">KOUN</span></h4>
                                 <h1 class="display-3 text-white mb-md-4">Explorons le Bénin ensemble</h1>
-                                {{--  <a href="" class="btn btn-primary py-md-3 px-md-5 mt-2">Laissez-vous aller</a> --}}
+
                             </div>
                         </div>
                     </div>
