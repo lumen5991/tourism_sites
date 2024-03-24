@@ -8,7 +8,7 @@
             <span class="navbar-toggler-bar bar3"></span>
           </button>
         </div>
-        <a class="navbar-brand" href="javascript:;">Paper Dashboard 2</a>
+        <a class="navbar-brand" href="javascript:;">Admin</a>
       </div>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-bar navbar-kebab"></span>
@@ -37,7 +37,9 @@
           </li>
           <li class="nav-item btn-rotate dropdown">
             <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <i class="nc-icon nc-bell-55"></i>
+              <i class="nc-icon nc-bell-55">
+                ::before
+              </i>
               <p>
                 <span class="d-lg-none d-md-block">Some Actions</span>
               </p>

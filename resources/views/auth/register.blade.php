@@ -76,7 +76,8 @@
                     <div class="col-lg-10">
                         <div class="contact-form bg-white p-5">
                             <div id="success"></div>
-                            <form action="#" method="post" enctype="multipart/form-data" novalidate="novalidate">
+                            <form action="{{ route('register')}}" method="post" enctype="multipart/form-data" novalidate="novalidate">
+                                @csrf
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">

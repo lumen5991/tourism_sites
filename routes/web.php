@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
+
+
 
 /*
 |--------------------------------------------------------------------------
@@ -12,6 +15,12 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+ 
+
+
+
+
 
 Route::view('/', 'index')->name('home');
 Route::view('/about', 'about')->name('about');
@@ -35,3 +44,10 @@ Route::view('/destination', 'destination')->name('destination');
 Route::view('/testimonial', 'testimonial')->name('testimonial');
 
 Route::view('/admin/listuser', 'admin.listUser')->name('listUser');
+
+
+
+
+
+
+
