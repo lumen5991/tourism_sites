@@ -160,7 +160,7 @@ public function login(Request $request)
 
     // Redirection selon le rôle de l'utilisateur
     if ($user->hasRole('admin')) {
-        return redirect()->route('listUser');
+        return redirect()->route('getAllUsers');
     } elseif ($user->hasRole('guide')) {
         return redirect()->route('guide');
     } else {
@@ -184,11 +184,14 @@ public function getAllUsers(Request $request)
     }
 
     // Récupérer tous les utilisateurs avec leurs rôles
-    $users = User::with('roles')->get();
-    dd($users);
+   $users = User::with('roles')->get(); 
+ /*   $users = User::all(); */
 
+   
+   
     // Renvoyer la vue avec les utilisateurs
-    return view('admin.listUser', compact('users'));
+    return view('admin.listUser', compact('users')); 
+
 }
 
     

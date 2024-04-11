@@ -27,19 +27,15 @@
                                                 @foreach ($user->roles as $role)
                                                     {{ $role->name }}
                                                     @if (!$loop->last)
-                                                        ,
                                                     @endif
                                                 @endforeach
                                             </td>
                                             <td>{{ $user->email }}</td>
                                             <td class="text-right">
-                                                @if ($user->hasRole('guide') && $user->status === 'pending')
-                                                    <form action="{{ route('approveGuideAccount', $user->guide->id) }}"
-                                                        method="post">
-                                                        @csrf
+                                               
                                                         <button type="submit" class="btn btn-success">Approuver</button>
-                                                    </form>
-                                                @endif
+                                                    
+                                                
                                             </td>
                                         </tr>
                                     @endforeach

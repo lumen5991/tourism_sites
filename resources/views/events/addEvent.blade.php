@@ -80,7 +80,7 @@
                         <div class="contact-form bg-white" style="padding: 50px;">
                             <div id="success"></div>
 
-                            <form action="#" method="post" enctype="multipart/form-data" novalidate="novalidate">
+                            <form action="#" method="" enctype="" novalidate="novalidate">
                                 <div class="form-group">
                                     <label for="event-title">Titre de l'événement</label>
                                     <input type="text" class="form-control" id="event-title"
@@ -117,8 +117,10 @@
                                         l'événement au format image (jpg, png, etc.).</small>
                                 </div>
                                 <div>
-                                    <button class="btn btn-primary btn-block py-3" type="submit"
-                                        style="font-weight: bold">Ajouter évènement</button>
+                                   {{--  <button class="btn btn-primary btn-block py-3" type="submit"
+                                        style="font-weight: bold">Ajouter évènement</button> --}}
+
+                                        <a href="{{route('events')}}" class="btn btn-primary btn-block py-3" style="font-weight: bold"> Ajouter évènement </a>
                                 </div>
                             </form>
                         </div>

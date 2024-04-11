@@ -39,6 +39,8 @@ Route::middleware(['auth', 'role:admin'])->group(function () {
 
 
 
+
+
 Route::view('/', 'index')->name('home');
 Route::view('/about', 'about')->name('about');
 
@@ -60,4 +62,4 @@ Route::view('/contact', 'contact')->name('contact');
 Route::view('/destination', 'destination')->name('destination');
 Route::view('/testimonial', 'testimonial')->name('testimonial');
 
-Route::view('/admin/listuser', 'admin.listUser')->name('listUser');
+/* Route::view('/admin/listuser', 'admin.listUser')->name('listUser'); */

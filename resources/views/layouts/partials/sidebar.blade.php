@@ -17,7 +17,7 @@
     <div class="sidebar-wrapper">
         <ul class="nav">
             <li class="active ">
-                <a href="{{ route('listUser') }}">
+                <a href="{{ route('getAllUsers') }}">
                     <i class="nc-icon nc-tile-56" style="color: #0f0"></i>
                     <p style="color: #0f0; font-weight:bold">Liste des Utilisateurs</p>
                 </a>
@@ -29,20 +29,20 @@
                 </a> --}}
             </li>
             <li>
-                <a href="{{route('listUser')}}">
+                <a href="{{route('getAllUsers')}}">
                     <i class="nc-icon nc-tile-56" style="color: #0f0; font-weight:bold"></i>
                     <p style="color: #0f0; font-weight:bold">Poubelles</p>
                 </a>
             </li>
             <li>
-                <a href="{{route('listUser')}}"  >
+                <a href="{{route('getAllUsers')}}"  >
                     <i class="nc-icon nc-pin-3" style="color: #0f0; font-weight:bold"></i>
                     <p style="color: #0f0; font-weight:bold">Localisations
                     </p>
                 </a>
             </li>
             <li>
-                <a href="{{route('listUser')}}">
+                <a href="{{route('getAllUsers')}}">
                     <i class="nc-icon nc-bell-55" style="color: #0f0; font-weight:bold"></i>
                     <p style="color: #0f0; font-weight:bold">Notifications</p>
                 </a>
