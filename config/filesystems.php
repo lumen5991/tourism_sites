@@ -37,10 +37,11 @@ return [
 
         'public' => [
             'driver' => 'local',
-            'root' => storage_path('app/public'),
-            'url' => env('APP_URL').'/storage',
+            'root' => storage_path('app/public/users_pictures'), // Dossier pour stocker les images des utilisateurs
+            'url' => env('APP_URL') . '/storage/users_pictures', // URL publique pour accéder aux images
             'visibility' => 'public',
         ],
+
 
         's3' => [
             'driver' => 's3',

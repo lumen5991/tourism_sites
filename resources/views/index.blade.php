@@ -10,7 +10,8 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img class="w-100" style="max-height: 80vh; object-fit: cover;"
-                            src="{{ asset('assets/IMAGES_BENIN/Photo_chute_kota_route_des_tata_1-scaled.jpg') }}" alt="Image">
+                            src="{{ asset('assets/IMAGES_BENIN/Photo_chute_kota_route_des_tata_1-scaled.jpg') }}"
+                            alt="Image">
                         <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                             <div class="p-3" style="max-width: 900px;">
                                 <h4 class="text-white text-uppercase mb-md-3">Bienvenue sur <span
@@ -193,29 +194,18 @@
                 <div class="container py-5">
                     <div class="row align-items-center">
                         <div class="col-lg-7 mb-5 mb-lg-0 text-black" style="text-align: justify">
-                            <p>Vous êtes un guide local passionné par la découverte et la mise en valeur des trésors du
-                                Bénin ? Rejoignez notre plateforme en tant que Guide Partenaire et faites briller votre
-                                expertise auprès des voyageurs du monde entier !</p>
+                            <p>Vous êtes un guide local passionné par la découverte et la mise en valeur des trésors du Bénin ? Rejoignez notre plateforme en tant que Guide Partenaire et faites briller votre expertise auprès des voyageurs du monde entier !</p>
                             <div class="mb-4">
                                 <h2><span class="text-primary">Pourquoi Devenir</span> Guide Partenaire ?</h2>
                             </div>
                             <ul class="list-unstyled">
-                                <li><i class="fas fa-check text-primary mr-2"></i>Visibilité accrue : Profitez d'une
-                                    visibilité maximale auprès des voyageurs en présentant votre profil détaillé sur notre
-                                    site web, avec vos compétences, vos langues parlées.</li>
-                                <li><i class="fas fa-check text-primary mr-2"></i>Opportunités de revenus : Transformez
-                                    votre passion en source de revenus en proposant vos services de guidage aux voyageurs en
-                                    recherche d'authenticité et d'expériences enrichissantes au Bénin.</li>
-                                <li><i class="fas fa-check text-primary mr-2"></i>Flexibilité totale : Fixez vos propres
-                                    tarifs, définissez vos disponibilités et personnalisez vos offres de services en
-                                    fonction des attentes des voyageurs.</li>
+                                <li><i class="fas fa-check text-primary mr-2"></i>Visibilité accrue : Profitez d'une visibilité maximale auprès des voyageurs en présentant votre profil détaillé sur notre site web, avec vos compétences, vos langues parlées.</li>
+                                <li><i class="fas fa-check text-primary mr-2"></i>Opportunités de revenus : Transformez votre passion en source de revenus en proposant vos services de guidage aux voyageurs en recherche d'authenticité et d'expériences enrichissantes au Bénin.</li>
+                                <li><i class="fas fa-check text-primary mr-2"></i>Flexibilité totale : Fixez vos propres tarifs, définissez vos disponibilités et personnalisez vos offres de services en fonction des attentes des voyageurs.</li>
                             </ul>
                             <h2><span class="text-primary">Comment Devenir</span> Guide Partenaire ?</h2>
-                            <p>L'inscription en tant que Guide Partenaire est simple et gratuite ! Remplissez notre
-                                formulaire d'inscription en fournissant les informations requises sur votre profil de guide.
-                            </p>
-                            <p style="text-align: center"> <strong>Rejoignez-nous dès aujourd'hui et partagez votre passion
-                                    pour le Bénin avec le monde entier !</strong> </p>
+                            <p>L'inscription en tant que Guide Partenaire est simple et gratuite ! Remplissez notre formulaire d'inscription en fournissant les informations requises sur votre profil de guide.</p>
+                            <p style="text-align: center"> <strong>Rejoignez-nous dès aujourd'hui et partagez votre passion pour le Bénin avec le monde entier !</strong> </p>
                         </div>
                         <div class="col-lg-5">
                             <div class="card border-0">
@@ -223,42 +213,53 @@
                                     <h1 class="text-white m-0">Inscrivez-vous</h1>
                                 </div>
                                 <div class="card-body rounded-bottom p-5" style="background-color: #F3F3F3">
-                                    <form action="#" method="post" enctype="multipart/form-data"
-                                        novalidate="novalidate">
+                                    <form action="{{ route('register.post') }}" method="post" enctype="multipart/form-data" novalidate="novalidate">
+                                        @csrf
+                                        @if ($errors->any())
+                                            <div class="alert alert-danger">
+                                                <ul>
+                                                    @foreach ($errors->all() as $error)
+                                                        <li>{{ $error }}</li>
+                                                    @endforeach
+                                                </ul>
+                                            </div>
+                                        @endif
                                         <div class="form-group">
-                                            <input type="text" class="form-control p-4" placeholder="Nom"
-                                                required="required" />
+                                            <input type="text" class="form-control p-4" id="firstname" name="firstname" placeholder="Nom" />
                                         </div>
                                         <div class="form-group">
-                                            <input type="text" class="form-control p-4" placeholder="Prénom"
-                                                required="required" />
+                                            <input type="text" class="form-control p-4" id="lastname" name="lastname" placeholder="Prénom" />
                                         </div>
                                         <div class="form-group">
-                                            <input type="text" class="form-control p-4"
-                                                placeholder="Nom d'utilisateur" required="required" />
+                                            <input type="text" class="form-control p-4" id="username" name="username" placeholder="Nom d'utilisateur" />
                                         </div>
                                         <div class="form-group">
-                                            <textarea class="form-control p-4" rows="2" placeholder="Description" required="required"></textarea>
+                                            <input type="email" class="form-control p-4" id="email" name="email" placeholder="Email" />
                                         </div>
                                         <div class="form-group">
-                                            <input type="tel" class="form-control p-4" placeholder="Téléphone"
-                                                required="required" />
+                                            <textarea class="form-control p-4" rows="2" id="description" name="description" placeholder="Description" ></textarea>
                                         </div>
                                         <div class="form-group">
-                                            <input type="text" class="form-control p-4" placeholder="Numéro IFU"
-                                                required="required" />
+                                            <input type="tel" class="form-control p-4" id="phone" name="phone" placeholder="Téléphone"  />
                                         </div>
                                         <div class="form-group">
-                                            <input type="text" class="form-control p-4" placeholder="Langue parlée"
-                                                required="required" />
+                                            <input type="text" class="form-control p-4" id="ifu" name="ifu" placeholder="Numéro IFU"  />
                                         </div>
                                         <div class="form-group">
-                                            <label for="" class="text-black">Une photo de vous</label>
-                                            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                                            <input type="text" class="form-control p-4" id="languages" name="languages" placeholder="Langue parlée" />
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="photo" class="text-black">Une photo de vous</label>
+                                            <input type="file" class="form-control-file" id="photo" name="photo">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" class="form-control p-4" id="password" name="password" placeholder="Mot de passe" required="required" />
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" class="form-control p-4" id="password_confirmation" name="password_confirmation" placeholder="Confirmez le mot de passe" required="required" />
                                         </div>
                                         <div>
-                                            <button class="btn btn-primary btn-block py-3" type="submit"
-                                                style="font-weight: bold">S'inscrire</button>
+                                            <button class="btn btn-primary btn-block py-3" type="submit" style="font-weight: bold">S'inscrire</button>
                                         </div>
                                     </form>
                                 </div>
@@ -267,6 +268,7 @@
                     </div>
                 </div>
             </div>
+            
         </div>
         <!-- Registration Guides End -->
 

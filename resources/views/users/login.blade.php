@@ -70,13 +70,23 @@
             <div class="container-lg py-5">
                 <div class="text-center mb-4 pb-4">
                     <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Connexion</h6>
-                    <h1>Connectez-vous à votre compte</h1>
+                 {{--    <h1>Connectez-vous à votre compte</h1> --}}
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-lg-6">
                         <div class="contact-form bg-white p-5">
                             <div id="success"></div>
-                            <form action="#" method="post" novalidate="novalidate">
+                            <form action="{{ route('login.post') }}" method="post" novalidate="novalidate" enctype="multipart/form-data">
+                                @csrf
+                                @if ($errors->any())
+                                <div class="alert alert-danger">
+                                    <ul>
+                                        @foreach ($errors->all() as $error)
+                                            <li>{{ $error }}</li>
+                                        @endforeach
+                                    </ul>
+                                </div>
+                            @endif
                                 <div class="form-group">
                                     <label for="email">Email</label>
                                     <input type="email" class="form-control" id="email" name="email" placeholder="Email"
@@ -95,7 +105,7 @@
                             </form>
                             <div class="text-justify">
                                 <p>Mot de passe oublié ? <a href="" style="color:#F18829">Modifier mot de passe</a></p>
-                                <p>Pas de compte ? <a href="" style="color:#F18829">Inscrivez-vous ici</a></p>
+                                <p>Pas de compte ? <a href="{{ route('register') }}" style="color:#F18829">Inscrivez-vous ici</a></p>
                             </div>
                         </div>
                     </div>

@@ -23,7 +23,7 @@ class CreateUsersTable extends Migration
             $table->string('address')->nullable();
             $table->string('telephone')->nullable();
             $table->string('password');
-            $table->string('verification_code'); 
+            $table->enum('status', ['pending', 'active'])->default('active');
             $table->timestamp('email_verified_at')->nullable(); 
             $table->rememberToken();
             $table->timestamps();

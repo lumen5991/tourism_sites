@@ -2,8 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
-
-
+use Illuminate\Http\Request;
+use Laravel\Passport\Http\Controllers\AccessTokenController;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,9 +17,25 @@ use Illuminate\Support\Facades\Auth;
 |
 */
 
- 
+// Passport routes
+Route::group(['prefix' => 'oauth'], function () {
+    Route::post('/token', [AccessTokenController::class, 'issueToken']);
+});
 
+// Routes for user authentication
+Route::group(['prefix' => 'auth'], function () {
+    Route::get('/register', [UserController::class, 'showRegistrationForm'])->name('register');
+    Route::post('/register', [UserController::class, 'register'])->name('register.post');
+    Route::get('/login', function () {
+        return view('users.login');
+    })->name('login');
+    Route::post('/login', [UserController::class, 'login'])->name('login.post');
+});
 
+Route::middleware(['auth', 'role:admin'])->group(function () {
+    // Route pour récupérer tous les utilisateurs
+    Route::get('/admin/listuser', [UserController::class, 'getAllUsers'])->name('getAllUsers');
+});
 
 
 
@@ -29,8 +46,8 @@ Route::view('/events', 'events.events')->name('events');
 Route::view('/detailsEvents', 'events.detailsEvents')->name('detailsEvents');
 Route::view('/addEvent', 'events.addEvent')->name('addEvent');
 
-Route::view('/register', 'users.register')->name('register');
-Route::view('/login', 'users.login')->name('login');
+/* Route::view('/register', 'users.register')->name('register');
+Route::view('/login', 'users.login')->name('login'); */
 
 Route::view('/sites', 'sites.sites')->name('sites');
 Route::view('/detailsSites', 'sites.detailsSites')->name('detailsSites');
@@ -44,10 +61,3 @@ Route::view('/destination', 'destination')->name('destination');
 Route::view('/testimonial', 'testimonial')->name('testimonial');
 
 Route::view('/admin/listuser', 'admin.listUser')->name('listUser');
-
-
-
-
-
-
-
