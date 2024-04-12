@@ -73,7 +73,7 @@
                 <div class="text-center mb-3 pb-3">
                     <h6 class="text-primary text-uppercase font-weight-bold" style="letter-spacing: 5px;">Ajouter un
                         évènement</h6>
-                    <h1>Bien vouloir remplir ce formulaire pour enregistrer un évènement</h1>
+                    <h3>Bien vouloir remplir ce formulaire pour enregistrer un évènement</h3>
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-lg-12">

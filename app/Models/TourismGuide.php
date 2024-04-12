@@ -20,8 +20,11 @@ class TourismGuide extends Model
         'languages'
     ];
 
-    public function user()
-    {
-        return $this->belongsTo(User::class);
-    }
+    // Relation avec l'utilisateur
+   // Dans votre modèle TourismGuide
+public function user()
+{
+    return $this->belongsTo(User::class, 'user');
+}
+
 }

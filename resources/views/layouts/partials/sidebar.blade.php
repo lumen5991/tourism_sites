@@ -6,9 +6,9 @@
             </div>
             <!-- <p>CT</p> -->
         </a>
-        <a href="#" class="simple-text logo-normal" style="font-weight: bold">
-            <p class="m-0 " style="color: brown"><span style="color: #089938">BENIN</span><span
-                style="color: #F18829">DO</span>KOUN</p>
+        <a href="{{route('home')}}" class="simple-text logo-normal" style="font-weight: bold">
+            <p  style="color: brown"><span style="color: #089938">BENIN</span><span
+                style="color: #F18829">DO</span>KOUN </p>
             <!-- <div class="logo-image-big">
           <img src="../assets/img/logo-big.png">
         </div> -->
@@ -29,24 +29,20 @@
                 </a> --}}
             </li>
             <li>
+                <a href="{{route('categories.index')}}">
+                    <i class="nc-icon nc-bell-55" style="color: #0f0; font-weight:bold"></i>
+                    <p style="color: #0f0; font-weight:bold">Categories</p>
+                </a>
+            </li>
+            <li>
                 <a href="{{route('getAllUsers')}}">
                     <i class="nc-icon nc-tile-56" style="color: #0f0; font-weight:bold"></i>
-                    <p style="color: #0f0; font-weight:bold">Poubelles</p>
+                    <p style="color: #0f0; font-weight:bold">Sites</p>
                 </a>
             </li>
-            <li>
-                <a href="{{route('getAllUsers')}}"  >
-                    <i class="nc-icon nc-pin-3" style="color: #0f0; font-weight:bold"></i>
-                    <p style="color: #0f0; font-weight:bold">Localisations
-                    </p>
-                </a>
-            </li>
-            <li>
-                <a href="{{route('getAllUsers')}}">
-                    <i class="nc-icon nc-bell-55" style="color: #0f0; font-weight:bold"></i>
-                    <p style="color: #0f0; font-weight:bold">Notifications</p>
-                </a>
-            </li>
+         
+           
+            
             <li class="active-pro">
                 <a href="./upgrade.html">
                   {{--   <i class="nc-icon nc-spaceship"></i>

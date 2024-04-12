@@ -172,9 +172,7 @@
                                 <!-- Organizer Details -->
                                 <h3 class=" text-primary mb-3 font-weight-bold pt-3">AHLE Rolande</h3>
                                 <div class="text-center">
-                                    <p>Conset elitr erat vero dolor ipsum et diam, eos dolor lorem, ipsum sit no ut est
-                                        ipsum
-                                        erat kasd amet elitr</p>
+                                    <p>Passionnée du tourisme, je vous propose mes services de guides touristiques</p>
                                     <div class="text-center">
                                         <p>Téléphone : <strong>99 3802 99</strong></p>
                                         <p>Email : <strong>rolande.ahle@ecole229.bj</strong></p>
@@ -183,12 +181,12 @@
                             </div>
 
                             <!-- Add event -->
-                            <div class="mb-5">
+                          {{--   <div class="mb-5">
                                 <div class="bg-white" style="padding: 30px;">
                                     <a href="{{route('addEvent')}}" class="btn btn-primary btn-block py-3 font-weight-bold">Ajouter un
                                         événement</a>
                                 </div>
-                            </div>
+                            </div> --}}
                         </div>
 
 
@@ -201,3 +199,5 @@
 
     </div>
 @endsection
+
+

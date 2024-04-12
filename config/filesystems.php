@@ -41,6 +41,12 @@ return [
             'url' => env('APP_URL') . '/storage/users_pictures', // URL publique pour accéder aux images
             'visibility' => 'public',
         ],
+        'tourist_sites_images' => [
+            'driver' => 'local',
+            'root' => storage_path('app/public/tourist_sites_images'), // Dossier pour stocker les images des sites touristiques
+            'url' => env('APP_URL') . '/storage/tourist_sites_images', // URL publique pour accéder aux images
+            'visibility' => 'public',
+        ],
 
 
         's3' => [
@@ -69,6 +75,10 @@ return [
 
     'links' => [
         public_path('storage') => storage_path('app/public'),
+        public_path('image') => storage_path('app/image'),
+        public_path('tourist_sites_images') => storage_path('app/tourist_sites_images'),
+        public_path('users_pictures') => storage_path('app/users_pictures'),
+        
     ],
 
 ];

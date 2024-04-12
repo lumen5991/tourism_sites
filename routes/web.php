@@ -5,6 +5,9 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 use Laravel\Passport\Http\Controllers\AccessTokenController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\LocationController;
+use App\Http\Controllers\TouristSiteController;
 
 /*
 |--------------------------------------------------------------------------
@@ -33,33 +36,32 @@ Route::group(['prefix' => 'auth'], function () {
 });
 
 Route::middleware(['auth', 'role:admin'])->group(function () {
-    // Route pour récupérer tous les utilisateurs
     Route::get('/admin/listuser', [UserController::class, 'getAllUsers'])->name('getAllUsers');
+    Route::post('/approve-guide-account/{user}', [UserController::class, 'approveGuideAccount'])->name('approve.guide.account');
+    Route::resource('categories', CategoryController::class);
 });
 
+Route::post('/logout', [UserController::class, 'logout'])->name('logout');
 
+Route::view('/listCategories', 'admin.categories')->name('listCategories');
 
+Route::get('/locations/search', [LocationController::class, 'search'])->name('locations.search');
 
+Route::get('/tourist-sites/create', [TouristSiteController::class, 'create'])->name('tourist_sites.create');
+Route::post('/tourist-sites', [TouristSiteController::class, 'store'])->name('tourist_sites.store');
 
 Route::view('/', 'index')->name('home');
 Route::view('/about', 'about')->name('about');
-
 Route::view('/events', 'events.events')->name('events');
 Route::view('/detailsEvents', 'events.detailsEvents')->name('detailsEvents');
 Route::view('/addEvent', 'events.addEvent')->name('addEvent');
-
-/* Route::view('/register', 'users.register')->name('register');
-Route::view('/login', 'users.login')->name('login'); */
-
 Route::view('/sites', 'sites.sites')->name('sites');
 Route::view('/detailsSites', 'sites.detailsSites')->name('detailsSites');
-
+Route::view('/addSites', 'sites.addSites')->name('addSites');
 Route::view('/infosGuide', 'guides.infosGuide')->name('infosGuide');
 Route::view('/guide', 'guides.guide')->name('guide');
-
 Route::view('/blog', 'blog')->name('blog');
 Route::view('/contact', 'contact')->name('contact');
 Route::view('/destination', 'destination')->name('destination');
 Route::view('/testimonial', 'testimonial')->name('testimonial');
 
-/* Route::view('/admin/listuser', 'admin.listUser')->name('listUser'); */

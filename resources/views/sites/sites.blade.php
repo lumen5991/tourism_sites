@@ -98,13 +98,13 @@
 
                                             <div class="border-top mt-4 pt-4">
                                                 <div class="d-flex justify-content-between">
-                                                    <h6 class="">
+                                             {{--        <h6 class="">
                                                         <button type="submit" class=""
                                                             style="cursor:pointer; background:transparent; outline:none; border:none">
                                                             <i class="fa fa-heart" style="color: #F18829;"></i>
                                                         </button>
                                                         <small>(5)</small>
-                                                    </h6>
+                                                    </h6> --}}
 
 
                                                 </div>
@@ -130,10 +130,10 @@
 
                                             <div class="border-top mt-4 pt-4">
                                                 <div class="d-flex justify-content-between">
-                                                    <h6 class="m-0"><i class="fa fa-heart mr-2 "
+                                                 {{--    <h6 class="m-0"><i class="fa fa-heart mr-2 "
                                                             style="color: #F18829; cursor:pointer"></i>
                                                         <small>(2)</small>
-                                                    </h6>
+                                                    </h6> --}}
                                                 </div>
                                             </div>
                                         </div>
@@ -203,7 +203,7 @@
                             
                     <!-- Search Form -->
                     <div class="mb-5">
-                        <div class="bg-white" style="padding: 30px;">
+                    {{--     <div class="bg-white" style="padding: 30px;">
                             <div class="input-group">
                                 <input type="text" class="form-control p-4" placeholder="voir les sites proches">
                                 <div class="input-group-append">
@@ -211,13 +211,13 @@
                                             class="fa fa-search"></i></span>
                                 </div>
                             </div>
-                        </div>
+                        </div> --}}
                     </div>
 
                             <!-- Add sites -->
                             <div class="mb-5">
                                 <div class="bg-white" style="padding: 30px;">
-                                    <a href="{{ route('addEvent') }}"
+                                    <a href="{{ route('addSites') }}"
                                         class="btn btn-primary btn-block py-3 font-weight-bold">Ajouter un site</a>
                                 </div>
                             </div>

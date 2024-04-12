@@ -49,9 +49,13 @@
                        <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Mon compte</a>
                         <div class="dropdown-menu border-0 rounded-0 m-0">
-                            <a href="{{ route('testimonial') }}" class="dropdown-item">Mon profil</a>
-                            <a href="{{ route('detailsEvents') }}" class="dropdown-item">Mes activités</a>
-                            <a href="{{ route('contact') }}" class="dropdown-item">Me déconnecter</a>
+                            <form action="{{ route('logout') }}" method="POST">
+                                @csrf
+                                <button type="submit" style="background: none; border: none; cursor: pointer;">
+                                    <i class="nc-icon nc-bell-55" style="font-weight:bold"></i>
+                                    <p style="font-weight:bold">Me déconnecter</p>
+                                </button>
+                            </form>
                         </div>
                     </div>
                     </div>
